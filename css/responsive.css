@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- */
+*/
 .hidden {
   display: none;
   visibility: hidden;
@@ -90,6 +90,9 @@
   .container {
     width: auto;
     padding: 0 20px;
+  }
+  .navbar-fixed-top .brand {
+    float: left;
   }
   .row-fluid {
     width: 100%;
@@ -410,6 +413,9 @@
   .nav-collapse {
     overflow: hidden;
     height: 0;
+  }
+  .navbar-fixed-top .brand {
+    float: left;
   }
 }
 @media (min-width: 980px) {

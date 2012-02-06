@@ -48,52 +48,21 @@
 @import "carousel.less";
 @import "hero-unit.less";
 
-body {padding-top: 10px;}
+body {padding-top: 50px;}
 
 #content {
     padding: 20px 30px;
     .border-radius(5px);
 }
-
-// Header
-header {
-    .border-radius(10px 10px 0 0);
-
-    padding: 5px 30px;
-    > h1{ font-size: 25px;}
-
-}
-
-
-// Navigation 
-nav  {
-    
-    .border-radius( 0 0 5px 5px);
-    padding: 0 30px;
-    
-}
-
-.navbar {
-  margin-bottom: 0;
+.navbar-fixed-top .brand  {
+    float:right;
+    font-weight: bold;
 }
 
 // Gradient is applied to it's own element because overflow visible is not honored by IE when filter is present
-nav, .navbar-inner {
+.navbar-inner {
   #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
-  .border-radius(0);
 }
-
-.nav {
-    margin-bottom:0;
-    .active {
-       .border-radius( 0 5px 0 5px);
-    }
-}
-
-.nav-pills > li > a {
-  padding: 5px 10px;
-}
-
 
 
 // Box 
