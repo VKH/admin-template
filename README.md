@@ -1,9 +1,10 @@
-![](http://imageshack.us/photo/my-images/513/screenshot20120206at115.png)
+![](http://imageshack.us/photo/my-images/513/screenshot20120206at115.png/)
 
 Steal My Admin Bootstrap and HTML5 / jQuery
 ---------
 
 *A lot of changes:*
+
  - Discard Glow to jQuery
  - Im using the jQuery code from the jquery version of the admin (if anybody knows the name of the author please tell me!)
  - Change the HTML to fit Twitter Bootstrap
