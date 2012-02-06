@@ -3543,7 +3543,7 @@ a.thumbnail:hover {
   line-height: 27px;
 }
 body {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 #content {
   padding: 20px 30px;
@@ -3554,6 +3554,8 @@ body {
 .navbar-fixed-top .brand {
   float: right;
   font-weight: bold;
+  color: #d1d6d4;
+  text-shadow: 0 1px 0 #131414, 0 0 30px #000000;
 }
 .navbar-inner {
   background-color: #525a58;

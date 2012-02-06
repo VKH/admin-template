@@ -1,3 +1,5 @@
+//@codekit-prepend 'bootstrap-collapse.js';
+
 $("[class*='span']").sortable({
     placeholder: 'ui-state-highlight',
     forcePlaceholderSize: true,

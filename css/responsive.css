@@ -417,6 +417,9 @@
   .navbar-fixed-top .brand {
     float: left;
   }
+  h2 {
+    font-size: 20px;
+  }
 }
 @media (min-width: 980px) {
   .nav-collapse.collapse {
