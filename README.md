@@ -1,3 +1,17 @@
+![](http://imageshack.us/photo/my-images/513/screenshot20120206at115.png)
+
+Steal My Admin Bootstrap and HTML5 / jQuery
+---------
+
+*A lot of changes:*
+ - Discard Glow to jQuery
+ - Im using the jQuery code from the jquery version of the admin (if anybody knows the name of the author please tell me!)
+ - Change the HTML to fit Twitter Bootstrap
+ - Simplify the menus to be like the Bootstrap
+ - Added the responsive version
+ 
+
+
 ![](http://img7.imageshack.us/img7/5646/phpmtrmkgam.jpg)
 
 License
@@ -14,9 +28,4 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-
-Steal My Admin Bootstrap and HTML5 / jQuery version 1
------------------------------------------------------
-
-*A lot of changes:*
 
