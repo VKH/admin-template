@@ -1,22 +1,29 @@
 ![](http://img513.imageshack.us/img513/127/screenshot20120206at115.png)
 
-Steal My Admin Bootstrap and HTML5 / jQuery
+Steal My Admin 
 ---------
+### Twitter Bootstrap and HTML5 / jQuery
 
 *A lot of changes:*
 
  - Added HTML5 code from H5bp
  - Use Less to be more easy to customize. Still in progress.
  - Discard Glow to jQuery
- - Im using a modified version of the jQuery code from the jquery version of the template (*if anybody knows the name of the author please tell me!*)
+ - Im using a modified version of the jQuery code from the jquery version of the template made by **Robert-Jan de Dreu** [@robertjandreu](http://twitter.com/robertjandreu) *Thanks Matt*
  - Change the HTML to fit Twitter Bootstrap
  - Simplify the menus to use the navbar of Bootstrap
  - Added the responsive version
  - Using the collapsible js to the resposive menu.
 
-** know issues: **
- - I made only the dashboard
+#### Know issues:
+
+ - I made only the dashboard (by now)
  - Still not complete themable, but its gonna be.
+
+#### If You like it follow me for the updates [@bicho44](http://twitter.com/bicho44)
+
+### Original version
+I keep it here to comparision and because Matt [@colonelrosa](http://twitter.com/colonelrosa) its a cool dude  
 
 ![](http://img7.imageshack.us/img7/5646/phpmtrmkgam.jpg)
 
