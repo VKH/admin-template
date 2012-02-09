@@ -3547,7 +3547,8 @@ a.thumbnail:hover {
 body {
   padding-top: 60px;
 }
-#content {
+#content,
+#dashboard {
   padding: 20px 30px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -3674,6 +3675,7 @@ textarea,
 input,
 td,
 #content,
+#dashboard,
 footer {
   background-color: #ffffff;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), color-stop(8%, #ffffff), to(#ffffff));
@@ -3736,20 +3738,6 @@ nav .active {
 }
 .box > h2 {
   background: url(box-h2.png) repeat-x bottom center #ffffff;
-}
-.error,
-.success,
-.info,
-.error a,
-.success a,
-.info a {
-  color: #ffffff;
-}
-.error {
-  background: #901830;
-}
-.success {
-  background: #c2efc2;
 }
 .ui-state-highlight {
   background: #eee;

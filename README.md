@@ -1,8 +1,7 @@
 ![](http://img513.imageshack.us/img513/127/screenshot20120206at115.png)
 
-Steal My Admin 
----------
-### Twitter Bootstrap and HTML5 / jQuery
+# Steal My Admin 
+## Twitter Bootstrap and HTML5 / jQuery
 
 *A lot of changes:*
 
@@ -15,14 +14,29 @@ Steal My Admin
  - Added the responsive version
  - Using the collapsible js to the resposive menu.
 
-#### Know issues:
+### Know issues:
 
- - I made only the dashboard (by now)
  - Still not complete themable, but its gonna be.
 
-#### If You like it follow me for the updates [@bicho44](http://twitter.com/bicho44)
+### Change Log:
 
-### Original version
+ ** v0.2b ** 
+
+ - Added User, news and dashboard
+ - Link the navBar to the pages
+ - Minors tweeks in css
+ - Include bootstrap-alert.js to manage the alerts
+ - Still work in progress in them able 
+
+** v0.1b **
+
+- Initial release
+- Only Dashboard
+
+### If You like it follow me for the updates [@bicho44](http://twitter.com/bicho44)
+or ** fork it ** and make it better.
+
+## Original version
 I keep it here to comparision and because Matt [@colonelrosa](http://twitter.com/colonelrosa) its a cool dude  
 
 ![](http://img7.imageshack.us/img7/5646/phpmtrmkgam.jpg)

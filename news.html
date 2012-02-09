@@ -1,73 +1,103 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<title>Steal My Admin</title>
-		<link rel="stylesheet" href="css/960.css" type="text/css" media="screen" charset="utf-8" />
-		<!--<link rel="stylesheet" href="css/fluid.css" type="text/css" media="screen" charset="utf-8" />-->
-		<link rel="stylesheet" href="css/template-org.css" type="text/css" media="screen" charset="utf-8" />
-		<link rel="stylesheet" href="css/colour.css" type="text/css" media="screen" charset="utf-8" />
-	</head>
-	<body>
-	<h1 id="head">Steal My Admin Template</h1>
-	<ul id="navigation">
-			<li><span class="active">Overview</span></li>
-			<li><a href="#">News</a></li>
-			<li><a href="#">Users</a></li>
-		</ul>
-			<div id="content" class="container_16 clearfix">
-				<div class="grid_16">
-					<h2>Submit News Article</h2>
-					<p class="error">Something went wronk.</p>
-				</div>
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
 
-				<div class="grid_5">
-					<p>
-						<label for="title">Title <small>Must contain alpha-numeric characters.</small></label>
-						<input type="text" name="title" />
-					</p>
-				</div>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-				<div class="grid_5">
-					<p>
-						<label for="title">Slug <small>Must contain alpha-numeric characters.</small></label>
-						<input type="text" name="title" />
-					</p>
-						
-				</div>
-				<div class="grid_6">
-					<p>
-						<label for="title">Category</label>
-						<select>
-							<option>Draft</option>
-							<option>Published</option>
-							<option>Private</option>
-						</select>
-					</p>
-				</div>
+        <title>Steal My Admin Template</title>
+        <meta name="description" content="">
 
-				<div class="grid_16">
-					<p>
-						<label>Summary <small>Will be displayed in search engine results.</small></label>
-						<textarea></textarea>
-					</p>
-				</div>
+        <meta name="viewport" content="width=device-width">
 
-				<div class="grid_16">
-					<p>
-						<label>Article <small>Markdown Syntax.</small></label>
-						<textarea class="big"></textarea>
-					</p>
-					<p class="submit">
-						<input type="reset" value="Reset" />
-						<input type="submit" value="Post" />
-					</p>
-				</div>
-			</div>
-		
-		<div id="foot">
-					<a href="#">Contact Me</a>
-		</div>
-	</body>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <script src="js/libs/modernizr-2.5.0.min.js"></script>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a href="#" class="brand">Steal My Admin Template</a>
+                    <!-- Everything you want hidden at 940px or less, place within here -->
+                    <div class="nav-collapse">
+                        <ul class="nav nav-pills">
+                            <li><a href="dashboard.html">Overview</a></li>
+                            <li class="active"><a href="news.html">News</a></li>
+                            <li><a href="user.html">Users</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="content" class="container">
+
+                <div class="row">
+                    <div class="span12">
+                        <h2>Submit News Article</h2>
+                        <div class="alert alert-error">
+                            <a class="close" data-dismiss="alert">×</a>
+                            <h4 class="alert-heading">Error!</h4>
+                            <p>Something went wronk.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="#" method="post">
+                    <div class="row">
+                        <div class="span4">
+                            <label for="title">Title <small>Must contain alpha-numeric characters.</small></label>
+                            <input type="text" class="span4" name="title" />
+                        </div>
+
+                        <div class="span4">
+                            <label for="title">Slug <small>Must contain alpha-numeric characters.</small></label>
+                            <input type="text" class="span4" name="title" />
+                        </div>
+
+                        <div class="span4">
+                            <label for="title">Category</label>
+                            <select class="span4">
+                                <option>Draft</option>
+                                <option>Published</option>
+                                <option>Private</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label>Summary <small>Will be displayed in search engine results.</small></label>
+                    <textarea class="span12"></textarea>
+
+                    <label>Article <small>Markdown Syntax.</small></label>
+                    <textarea class="span12"></textarea>
+
+                    <input type="reset" value="Reset" class="btn" />
+                    <input type="submit" value="Post" class="btn" />
+
+                </form>
+            </div>
+
+            <footer class="container">
+                <p>
+                    <a href="#">Contact Me</a>
+                </p>
+            </footer>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+            <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+            <script>window.jQuery || document.write('<script src="js/libs/jquery-ui.min.js"><\/script>')</script>
+
+            <script src="js/min/script-min.js"></script>
+    </body>
 </html>

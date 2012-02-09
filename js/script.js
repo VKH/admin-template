@@ -1,9 +1,9 @@
-//@codekit-prepend 'bootstrap-collapse.js';
+//@codekit-prepend 'bootstrap-transition.js', 'bootstrap-collapse.js', 'bootstrap-alert.js';
 
-$("[class*='span']").sortable({
+$("#dashboard span4").sortable({
     placeholder: 'ui-state-highlight',
     forcePlaceholderSize: true,
-    connectWith: '[class*="span"]',
+    connectWith: '#dashboard span4',
     handle: 'h2',
     revert: true
 });
