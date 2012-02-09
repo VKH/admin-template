@@ -1,10 +1,10 @@
-//@codekit-prepend 'bootstrap-transition.js', 'bootstrap-collapse.js', 'bootstrap-alert.js';
+//@codekit-prepend 'bootstrap-transition.js', 'bootstrap-collapse.js', 'bootstrap-alert.js', 'bootstrap-dropdown.js';
 
-$("#dashboard span4").sortable({
+$("#dashboard .span4").sortable({
     placeholder: 'ui-state-highlight',
     forcePlaceholderSize: true,
-    connectWith: '#dashboard span4',
+    connectWith: '#dashboard .span4',
     handle: 'h2',
     revert: true
 });
-//$("[class*='span']").disableSelection();
+//$("#dashboard .span4").disableSelection();

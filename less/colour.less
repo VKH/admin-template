@@ -1,23 +1,32 @@
+/*
+* Theme Colors
+*/
+
+// Background
+@siteBackground:#F7F4E9;
+@siteBackgroundHighlight: lighten(#F7F4E9,20%);
+
+//Headers and Buttons
+@hbcolor: #434A48;
+
 body {
-    #gradient > .vertical-three-colors(lighten(#F7F4E9,20%), #F7F4E9, 20%, #F7F4E9);
-/*    background:#F7F4E9 url(body.png) repeat-x top center;*/
+    #gradient > .vertical-three-colors(@siteBackgroundHighlight, @siteBackground, 20%, @siteBackground);
 }
 small {
-	color:@grayDark;
+	color:@grayLight;
 }
 
 th,.active,input[type=submit],.pagination a:hover,.date td a:hover {
-	background:#434A48;
+	background:@hbcolor;
 	color:@white
 }
 
 select, textarea, input, td, #content, #dashboard, footer {
         #gradient > .vertical-three-colors(lighten(@black, 95%), @white, 8%, @white);
-/*	background:#fff url(gradient.png) repeat-x 0 -28px*/
 }
-tr {
+/*tr {
 	background-position:0 -18px;
-}
+}*/
 
 
 .active, th, header > h1, nav a, input[type=submit] {
@@ -33,13 +42,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 a {
-	color:#888
-}
-a.edit {
-	background-image:url(edit.png)
-}
-a.delete {
-	background-image:url(trash.png)
+	color:@grayDark;
+        
+        &.edit {
+            background-image:url(edit.png);
+        }
+        &.delete {
+            background-image:url(trash.png);
+        }
 }
 
 header {

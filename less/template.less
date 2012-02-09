@@ -36,7 +36,7 @@
 @import "pager.less";
 
 // Components: Popovers
-@import "modals.less";
+/*@import "modals.less";
 @import "tooltip.less";
 @import "popovers.less";
 
@@ -46,14 +46,17 @@
 @import "progress-bars.less";
 @import "accordion.less";
 @import "carousel.less";
-@import "hero-unit.less";
+@import "hero-unit.less";*/
 
-body {padding-top: 60px;}
+
+body { padding-top: 60px; }
 
 #content, #dashboard {
-    padding: 20px 30px;
+    padding: 18px 30px;
     .border-radius(5px);
+    margin-bottom: @baseLineHeight;
 }
+
 .navbar-fixed-top .brand  {
     float:right;
     font-weight: bold;
@@ -104,28 +107,28 @@ body {padding-top: 60px;}
     }
 }
 
-
+label {
+    #font > .shorthand(17px, bold);
+    small {
+        #font > .shorthand(12px, normal);
+        color: @grayLight;
+        padding-left: 10px;
+    }
+}
 
 
 footer {
     .border-radius(5px 10px 10px 5px);
-    padding: 0 30px;
+    padding: 14px 30px 4px;
 }
 
 
-
-.curved, nav > ul > li a, nav > ul > li span, .error, .success, .box, .utils a {
-    -moz-border-radius-bottomleft:5px;
-    -moz-border-radius-topright:5px;
-    -webkit-border-bottom-left-radius:5px;
-    -webkit-border-top-right-radius:5px;
+.curved, .alert, .box, .utils a {
+    .border-radius(5px 0 5px 0);
 }
 
 .curved-alt, input, textarea, select, .box, .date td a, .utils a  {
-    -moz-border-radius-bottomright:5px;
-    -moz-border-radius-topleft:5px;
-    -webkit-border-bottom-right-radius:5px;
-    -webkit-border-top-left-radius:5px;
+    .border-radius(5px 0 5px 0);
 }
 
 

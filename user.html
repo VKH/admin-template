@@ -35,183 +35,198 @@
                     <!-- Everything you want hidden at 940px or less, place within here -->
                     <div class="nav-collapse">
                         <ul class="nav nav-pills">
-                            <li><a href="dashboard.html">Overview</a></li>
-                            <li><a href="news.html">News</a></li>
-                            <li class="active"><a href="user.html">Users</a></li>
+                            <li><a href="dashboard.html"><i class="icon-th-large icon-white"></i> Overview</a></li>
+                            <li><a href="news.html"><i class="icon-file icon-white"></i> News</a></li>
+                            <li class="active"><a href="user.html"><i class="icon-user icon-white"></i> Users</a></li>
+                            <li class="divider-vertical"></li>
+                            
+                            <li class="dropdown" id="login">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+                                    <i class="icon-star icon-white"></i> Login <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Logged as Matt</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Log Out</a></li>
+                                </ul>
+                            </li>
+                            
                         </ul>
                     </div>
                 </div>
             </div>
+        </div><!-- End Nav Bar-->
+        
+        <div id="content" class="container">
 
-            <div id="content" class="container">
+            <div class="row">
                 <form action="#" method="post">
-                    <div class="row">
-                        <div class="span3">
-                            <label>Username<small>Alpha-numeric values</small></label>
-                            <input type="text" />
-                        </div>
-                        <div class="span3">
-                            <label>Email Address</label>
-                            <input type="text" />
-                        </div>
-                        <div class="span3">
-                            <label>Department</label>
-                            <select>
-                                <option>Development</option>
-                                <option>Marketing</option>
-                                <option>Design</option>
-                                <option>IT</option>
-                            </select>
-                        </div>
-                        <div class="span3">
-                            <input type="submit" value="Search" />
-                        </div>
+                    <div class="span3">
+                        <label>Username<small>Alpha-numeric values</small></label>
+                        <input type="text" class="span3" />
+                    </div>
+                    <div class="span3">
+                        <label>Email Address</label>
+                        <input type="text" class="span3"/>
+                    </div>
+                    <div class="span3">
+                        <label>Department</label>
+                        <select class="span3">
+                            <option>Development</option>
+                            <option>Marketing</option>
+                            <option>Design</option>
+                            <option>IT</option>
+                        </select>
+                    </div>
+                    <div class="span3">
+                        <input type="submit" value="Search" class="btn" />
                     </div>
                 </form>
-                <div class="row">
-                    <div class="span12">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Username</th>
-                                    <th>Manager</th>
-                                    <th>Department</th>
-                                    <th colspan="2" width="10%">Actions</th>
-                                </tr>
-                            </thead>
-                            <tfoot>
-                                <tr>
-                                    <td colspan="5">
-                                        <div class="pagination">
-                                            <ul>
-                                                <li><a href="#">Prev</a></li>
-                                                <li class="active">
-                                                    <a href="#">1</a>
-                                                </li>
-                                                <li><a href="#">2</a></li>
-                                                <li><a href="#">3</a></li>
-                                                <li><a href="#">4</a></li>
-                                                <li><a href="#">Next</a></li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tfoot>
-                            <tbody>
-                                <tr>
-                                    <td>Philip</td>
-                                    <td>Claire</td>
-                                    <td>Development</td>
-                                    <td><a href="#" class="edit">Edit</a></td>
-                                    <td><a href="#" class="delete">Delete</a></td>
-                                </tr>
-                                <tr class="alt">
-                                    <td>Thomas</td>
-                                    <td>Philip</td>
-                                    <td>Marketing</td>
-                                    <td><a href="#" class="edit">Edit</a></td>
-                                    <td><a href="#" class="delete">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Ben</td>
-                                    <td>Thomas</td>
-                                    <td>Marketing</td>
-                                    <td><a href="#" class="edit">Edit</a></td>
-                                    <td><a href="#" class="delete">Delete</a></td>
-                                </tr>
-                                <tr class="alt">
-                                    <td>Richard</td>
-                                    <td>Ben</td>
-                                    <td>Development</td>
-                                    <td><a href="#" class="edit">Edit</a></td>
-                                    <td><a href="#" class="delete">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Alon</td>
-                                    <td>Richard</td>
-                                    <td>Development</td>
-                                    <td><a href="#" class="edit">Edit</a></td>
-                                    <td><a href="#" class="delete">Delete</a></td>
-                                </tr>
-                                <tr class="alt">
-                                    <td>Alex</td>
-                                    <td>Alon</td>
-                                    <td>IT</td>
-                                    <td><a href="#" class="edit">Edit</a></td>
-                                    <td><a href="#" class="delete">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Nathan</td>
-                                    <td>Alex</td>
-                                    <td>IT</td>
-                                    <td><a href="#" class="edit">Edit</a></td>
-                                    <td><a href="#" class="delete">Delete</a></td>
-                                </tr>
-                                <tr class="alt">
-                                    <td>Habib</td>
-                                    <td>Nathan</td>
-                                    <td>Design</td>
-                                    <td><a href="#" class="edit">Edit</a></td>
-                                    <td><a href="#" class="delete">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Jeremy</td>
-                                    <td>Habib</td>
-                                    <td>Design</td>
-                                    <td><a href="#" class="edit">Edit</a></td>
-                                    <td><a href="#" class="delete">Delete</a></td>
-                                </tr>
-                                <tr class="alt">
-                                    <td>Ed</td>
-                                    <td>Jeremy</td>
-                                    <td>Design</td>
-                                    <td><a href="#" class="edit">Edit</a></td>
-                                    <td><a href="#" class="delete">Delete</a></td>
-                                </tr>
-                                <tr class="alt">
-                                    <td>Claire</td>
-                                    <td>Ed</td>
-                                    <td>Development</td>
-                                    <td><a href="#" class="edit">Edit</a></td>
-                                    <td><a href="#" class="delete">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Philip</td>
-                                    <td>Tom</td>
-                                    <td>Development</td>
-                                    <td><a href="#" class="edit">Edit</a></td>
-                                    <td><a href="#" class="delete">Delete</a></td>
-                                </tr>
-                                <tr class="alt">
-                                    <td>Thomas</td>
-                                    <td>Claire</td>
-                                    <td>Marketing</td>
-                                    <td><a href="#" class="edit">Edit</a></td>
-                                    <td><a href="#" class="delete">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Ben</td>
-                                    <td>Thomas</td>
-                                    <td>Marketing</td>
-                                    <td><a href="#" class="edit">Edit</a></td>
-                                    <td><a href="#" class="delete">Delete</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Manager</th>
+                                <th>Department</th>
+                                <th colspan="2" width="20%">Actions</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">
+                                    <div class="pagination">
+                                        <ul>
+                                            <li><a href="#">Prev</a></li>
+                                            <li class="active">
+                                                <a href="#">1</a>
+                                            </li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">Next</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>Philip</td>
+                                <td>Claire</td>
+                                <td>Development</td>
+                                <td><a href="#"><i class="icon-edit"></i>Edit</a></td>
+                                <td><a href="#"><i class="icon-trash"></i>Delete</a></td>
+                            </tr>
+                            <tr class="alt">
+                                <td>Thomas</td>
+                                <td>Philip</td>
+                                <td>Marketing</td>
+                                <td><a href="#" ><i class="icon-edit"></i>Edit</a></td>
+                                <td><a href="#" ><i class="icon-trash"></i>Delete</a></td>
+                            </tr>
+                            <tr>
+                                <td>Ben</td>
+                                <td>Thomas</td>
+                                <td>Marketing</td>
+                                <td><a href="#" ><i class="icon-edit"></i>Edit</a></td>
+                                <td><a href="#" ><i class="icon-trash"></i>Delete</a></td>
+                            </tr>
+                            <tr class="alt">
+                                <td>Richard</td>
+                                <td>Ben</td>
+                                <td>Development</td>
+                                <td><a href="#" ><i class="icon-edit"></i>Edit</a></td>
+                                <td><a href="#" ><i class="icon-trash"></i>Delete</a></td>
+                            </tr>
+                            <tr>
+                                <td>Alon</td>
+                                <td>Richard</td>
+                                <td>Development</td>
+                                <td><a href="#" ><i class="icon-edit"></i>Edit</a></td>
+                                <td><a href="#" ><i class="icon-trash"></i>Delete</a></td>
+                            </tr>
+                            <tr class="alt">
+                                <td>Alex</td>
+                                <td>Alon</td>
+                                <td>IT</td>
+                                <td><a href="#" ><i class="icon-edit"></i>Edit</a></td>
+                                <td><a href="#" ><i class="icon-trash"></i>Delete</a></td>
+                            </tr>
+                            <tr>
+                                <td>Nathan</td>
+                                <td>Alex</td>
+                                <td>IT</td>
+                                <td><a href="#" ><i class="icon-edit"></i>Edit</a></td>
+                                <td><a href="#" ><i class="icon-trash"></i>Delete</a></td>
+                            </tr>
+                            <tr class="alt">
+                                <td>Habib</td>
+                                <td>Nathan</td>
+                                <td>Design</td>
+                                <td><a href="#" ><i class="icon-edit"></i>Edit</a></td>
+                                <td><a href="#" ><i class="icon-trash"></i>Delete</a></td>
+                            </tr>
+                            <tr>
+                                <td>Jeremy</td>
+                                <td>Habib</td>
+                                <td>Design</td>
+                                <td><a href="#" ><i class="icon-edit"></i>Edit</a></td>
+                                <td><a href="#" ><i class="icon-trash"></i>Delete</a></td>
+                            </tr>
+                            <tr class="alt">
+                                <td>Ed</td>
+                                <td>Jeremy</td>
+                                <td>Design</td>
+                                <td><a href="#" ><i class="icon-edit"></i>Edit</a></td>
+                                <td><a href="#" ><i class="icon-trash"></i>Delete</a></td>
+                            </tr>
+                            <tr class="alt">
+                                <td>Claire</td>
+                                <td>Ed</td>
+                                <td>Development</td>
+                                <td><a href="#" ><i class="icon-edit"></i>Edit</a></td>
+                                <td><a href="#" ><i class="icon-trash"></i>Delete</a></td>
+                            </tr>
+                            <tr>
+                                <td>Philip</td>
+                                <td>Tom</td>
+                                <td>Development</td>
+                                <td><a href="#" ><i class="icon-edit"></i>Edit</a></td>
+                                <td><a href="#" ><i class="icon-trash"></i>Delete</a></td>
+                            </tr>
+                            <tr class="alt">
+                                <td>Thomas</td>
+                                <td>Claire</td>
+                                <td>Marketing</td>
+                                <td><a href="#" ><i class="icon-edit"></i>Edit</a></td>
+                                <td><a href="#" ><i class="icon-trash"></i>Delete</a></td>
+                            </tr>
+                            <tr>
+                                <td>Ben</td>
+                                <td>Thomas</td>
+                                <td>Marketing</td>
+                                <td><a href="#" ><i class="icon-edit"></i>Edit</a></td>
+                                <td><a href="#" ><i class="icon-trash"></i>Delete</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <footer class="container">
-                <p>
-                    <a href="#">Contact Me</a>
-                </p>
-            </footer>
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-            <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/libs/jquery-ui.min.js"><\/script>')</script>
+        </div>
+        <footer class="container">
+            <p>
+                <a href="#">Contact Me</a>
+            </p>
+        </footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery-ui.min.js"><\/script>')</script>
 
-            <script src="js/min/script-min.js"></script>
+        <script src="js/min/script-min.js"></script>
 
     </body>
 </html>

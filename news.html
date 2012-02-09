@@ -34,70 +34,84 @@
                     <!-- Everything you want hidden at 940px or less, place within here -->
                     <div class="nav-collapse">
                         <ul class="nav nav-pills">
-                            <li><a href="dashboard.html">Overview</a></li>
-                            <li class="active"><a href="news.html">News</a></li>
-                            <li><a href="user.html">Users</a></li>
+                            <li><a href="dashboard.html"><i class="icon-th-large icon-white"></i> Overview</a></li>
+                            <li class="active"><a href="news.html"><i class="icon-file icon-white"></i> News</a></li>
+                            <li><a href="user.html"><i class="icon-user icon-white"></i> Users</a></li>
+                            <li class="divider-vertical"></li>
+                            
+                            <li class="dropdown" id="login">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+                                    <i class="icon-star icon-white"></i> Login <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Logged as Matt</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Log Out</a></li>
+                                </ul>
+                            </li>
+                            
                         </ul>
                     </div>
                 </div>
             </div>
-            <div id="content" class="container">
+        </div><!-- End Nav Bar-->
+        <div id="content" class="container">
 
+            <div class="row">
+                <div class="span12">
+                    <h2>Submit News Article</h2>
+                    <div class="alert alert-error">
+                        <a class="close" data-dismiss="alert">×</a>
+                        <h4 class="alert-heading">Error!</h4>
+                        <p>Something went wronk.</p>
+                    </div>
+                </div>
+            </div>
+
+            <form action="#" method="post">
                 <div class="row">
-                    <div class="span12">
-                        <h2>Submit News Article</h2>
-                        <div class="alert alert-error">
-                            <a class="close" data-dismiss="alert">×</a>
-                            <h4 class="alert-heading">Error!</h4>
-                            <p>Something went wronk.</p>
-                        </div>
+                    <div class="span4">
+                        <label for="title">Title <small>Must contain alpha-numeric characters.</small></label>
+                        <input type="text" class="span4" name="title" />
+                    </div>
+
+                    <div class="span4">
+                        <label for="title">Slug <small>Must contain alpha-numeric characters.</small></label>
+                        <input type="text" class="span4" name="title" />
+                    </div>
+
+                    <div class="span4">
+                        <label for="title">Category</label>
+                        <select class="span4">
+                            <option>Draft</option>
+                            <option>Published</option>
+                            <option>Private</option>
+                        </select>
                     </div>
                 </div>
 
-                <form action="#" method="post">
-                    <div class="row">
-                        <div class="span4">
-                            <label for="title">Title <small>Must contain alpha-numeric characters.</small></label>
-                            <input type="text" class="span4" name="title" />
-                        </div>
+                <label>Summary <small>Will be displayed in search engine results.</small></label>
+                <textarea class="span12"></textarea>
 
-                        <div class="span4">
-                            <label for="title">Slug <small>Must contain alpha-numeric characters.</small></label>
-                            <input type="text" class="span4" name="title" />
-                        </div>
+                <label>Article <small>Markdown Syntax.</small></label>
+                <textarea class="span12"></textarea>
 
-                        <div class="span4">
-                            <label for="title">Category</label>
-                            <select class="span4">
-                                <option>Draft</option>
-                                <option>Published</option>
-                                <option>Private</option>
-                            </select>
-                        </div>
-                    </div>
+                <input type="reset" value="Reset" class="btn" />
+                <input type="submit" value="Post" class="btn" />
 
-                    <label>Summary <small>Will be displayed in search engine results.</small></label>
-                    <textarea class="span12"></textarea>
+            </form>
+        </div>
 
-                    <label>Article <small>Markdown Syntax.</small></label>
-                    <textarea class="span12"></textarea>
+        <footer class="container">
+            <p>
+                <a href="#">Contact Me</a>
+            </p>
+        </footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery-ui.min.js"><\/script>')</script>
 
-                    <input type="reset" value="Reset" class="btn" />
-                    <input type="submit" value="Post" class="btn" />
-
-                </form>
-            </div>
-
-            <footer class="container">
-                <p>
-                    <a href="#">Contact Me</a>
-                </p>
-            </footer>
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-            <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/libs/jquery-ui.min.js"><\/script>')</script>
-
-            <script src="js/min/script-min.js"></script>
+        <script src="js/min/script-min.js"></script>
     </body>
 </html>
