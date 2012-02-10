@@ -2994,13 +2994,20 @@ footer {
   border-radius: 5px 10px 10px 5px;
   padding: 14px 30px 4px;
 }
+.alert {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
 .curved,
 .alert,
 .box,
 .utils a {
-  -webkit-border-radius: 5px 0 5px 0;
-  -moz-border-radius: 5px 0 5px 0;
-  border-radius: 5px 0 5px 0;
+  -webkit-border-radius: 0 5px 0 5px;
+  -moz-border-radius: 0 5px 0 5px;
+  border-radius: 0 5px 0 5px;
 }
 .curved-alt,
 input,
@@ -3009,24 +3016,10 @@ select,
 .box,
 .date td a,
 .utils a {
-  -webkit-border-radius: 5px 0 5px 0;
-  -moz-border-radius: 5px 0 5px 0;
-  border-radius: 5px 0 5px 0;
+  -webkit-border-radius: 0 5px 0 5px;
+  -moz-border-radius: 0 5px 0 5px;
+  border-radius: 0 5px 0 5px;
 }
-/*// Error and Success messages 
-.error, .success {
-        padding:4px 8px;
-}
-
-// Pagination 
-.pagination {
-        text-align:right;
-}
-.pagination a, .pagination span {
-        display:inline-block;
-        margin:0 2px;
-        padding:2px 6px;
-}*/
 /*
 * Theme Colors
 */
