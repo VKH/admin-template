@@ -1,7 +1,32 @@
-![](http://img513.imageshack.us/img513/127/screenshot20120206at115.png)
+![](http://img850.imageshack.us/img850/9594/screenshot20120210at837.png)
 
 # Steal My Admin 
-## Twitter Bootstrap and HTML5 / jQuery
+### HTML5, Twitter Bootstrap and jQuery
+
+### Change Log:
+
+ **v0.3b**
+
+ - Added icons to the NavBar and the User.html
+ - New Login Menu
+ - Some variables to the colour.less files starting to make it them able
+ - Resolve a bug in the HTML so now the HTML works as expected. 
+ - Using more of the js from Bootstrap.
+
+ **v0.2b** 
+
+ - Added User, news and dashboard
+ - Link the navBar to the pages
+ - Minors tweeks in css
+ - Include bootstrap-alert.js to manage the alerts
+ - Still work in progress in them able 
+
+**v0.1b**
+
+- Initial release
+- Only Dashboard
+
+**v0.0b**
 
 *A lot of changes:*
 
@@ -18,31 +43,21 @@
 
  - Still not complete themable, but its gonna be.
 
-### Change Log:
-
- ** v0.2b ** 
-
- - Added User, news and dashboard
- - Link the navBar to the pages
- - Minors tweeks in css
- - Include bootstrap-alert.js to manage the alerts
- - Still work in progress in them able 
-
-** v0.1b **
-
-- Initial release
-- Only Dashboard
-
 ### If You like it follow me for the updates [@bicho44](http://twitter.com/bicho44)
-or ** fork it ** and make it better.
+or **fork it** and make it better.
+
+Licenses
+----
+
+- Twitter Bootstrap its Copyright from Twitter (Apache 2.0)
+- 
 
 ## Original version
 I keep it here to comparision and because Matt [@colonelrosa](http://twitter.com/colonelrosa) its a cool dude  
 
 ![](http://img7.imageshack.us/img7/5646/phpmtrmkgam.jpg)
 
-License
--------
+## Original License
 
 Copyright (c) 2010, Mathew Davies
 All rights reserved.
