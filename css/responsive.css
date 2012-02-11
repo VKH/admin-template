@@ -310,6 +310,22 @@
   .uneditable-input.span12 {
     width: 714px;
   }
+  #dashboard small,
+  #content small {
+    display: none;
+    visibility: hidden;
+  }
+  .date th,
+  .date td {
+    text-align: center;
+  }
+  .date td a {
+    display: inline-block;
+    padding: 3px;
+  }
+  .input-xlarge {
+    width: 95%;
+  }
 }
 @media (max-width: 980px) {
   body {
@@ -361,7 +377,7 @@
   }
   .navbar .nav > li > a:hover,
   .navbar .dropdown-menu a:hover {
-    background-color: #434a48;
+    background-color: #222222;
   }
   .navbar .dropdown-menu {
     position: static;
@@ -393,8 +409,8 @@
     float: none;
     padding: 9px 15px;
     margin: 9px 0;
-    border-top: 1px solid #434a48;
-    border-bottom: 1px solid #434a48;
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);

@@ -12,28 +12,28 @@
 
 // Base CSS
 @import "type.less";
-@import "code.less";
+//@import "code.less";
 @import "forms.less";
 @import "tables.less";
 
 // Components: common
 @import "sprites.less";
 @import "dropdowns.less";
-@import "wells.less";
-@import "component-animations.less";
+//@import "wells.less";
+//@import "component-animations.less";
 @import "close.less";
 
 // Components: Buttons & Alerts
 @import "buttons.less";
-@import "button-groups.less";
+//@import "button-groups.less";
 @import "alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
 
 // Components: Nav
 @import "navs.less";
 @import "navbar.less";
-@import "breadcrumbs.less";
+//@import "breadcrumbs.less";
 @import "pagination.less";
-@import "pager.less";
+//@import "pager.less";
 
 // Components: Popovers
 /*@import "modals.less";
@@ -52,42 +52,37 @@
 body { padding-top: 60px; }
 
 #content, #dashboard {
-    padding: 18px 30px;
+    padding: @baseLineHeight @baseLineHeight*1.8;
     .border-radius(5px);
     margin-bottom: @baseLineHeight;
 }
 
+//Brand
 .navbar-fixed-top .brand  {
     float:right;
     font-weight: bold;
-    color: lighten(@linkColor, 40%);
-    //text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
-    text-shadow: 0 1px 0 darken(@navbarBackgroundHighlight,30%),0 0 30px darken(@navbarBackgroundHighlight,40%) ;
-}
-
-// Gradient is applied to it's own element because overflow visible is not honored by IE when filter is present
-.navbar-inner {
-  #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
 }
 
 
-// Box 
-
+// Box
 .box {
     position:relative;
     border:1px solid;
-    margin-bottom: 10px;
+    margin-bottom: @baseLineHeight;
 
     h2 {
         .border-radius(5px 0 5px 0);
         padding:2px 10px;
         cursor:move;
     }
-    p {
+    
+    p,form {
         padding:10px;
     }
 }
 
+
+//Action Button in Dashboard
 .utils a {
     position:absolute;
     top:5px;
@@ -96,47 +91,50 @@ body { padding-top: 60px; }
     padding:4px 8px;
 }
 
+//Calendar Table
 .date {
+    caption {#font > .shorthand(13px,bold)}
     th,td {
         text-align:center;
-	padding:3px;
     }
+    
     td a {
 	display:inline-block;
-	padding:3px 8px;
+        padding:3px 8px;
     }
 }
 
+//Forms
 label {
-    #font > .shorthand(17px, bold);
+    #font > .shorthand(17px, bold, @baseLineHeight/@baseFontSize*17);
     small {
         #font > .shorthand(12px, normal);
-        color: @grayLight;
         padding-left: 10px;
     }
 }
 
+.checkbox {#font > .shorthand(13px,normal,@baseLineHeight);}
 
+// SearchButton User.html
+#searchbutton{margin-top:@baseLineHeight;}
+
+//Footer App
 footer {
-    .border-radius(5px 10px 10px 5px);
-    padding: 14px 30px 4px;
+    .border-radius(5px 0 5px 0);
+    padding: @baseLineHeight @baseLineHeight*1.5 @baseLineHeight/2;
+    margin-bottom:@baseLineHeight;
 }
 
-
-.alert {
-    .transition(all .2s linear);
-}
-
-.curved, .alert, .box, .utils a {
+// Miselaneus Options
+.curved, .btn, .alert, .box, .utils a {
     .border-radius(0 5px 0 5px);
 }
 
-.curved-alt, input, textarea, select, .box, .date td a, .utils a  {
-    .border-radius(0 5px 0 5px);
+.curved-alt, input, textarea, select, .date td a  {
+    .border-radius(5px 0 5px 0);
 }
 
-
-// Change this file to make it themable :D
+// Change this file to make it themable 
 @import "colour.less";
 
 // Utility classes

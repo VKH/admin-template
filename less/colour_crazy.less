@@ -1,47 +1,46 @@
 /*
-* Theme Colors
+* Crazy Colors
 * Here we override some variables of the Bootstrap
 *
 */
 
 // Text
-@textColor:             @black;
+@textColor:             #2945a3;
 
 // Links
-@linkColor:             #687370;
+@linkColor:             spin(@textColor,45);
 @linkColorHover:        darken(@linkColor, 15%);
 
 // Navbar
-@navbarBackground:                #434A48;
+@navbarBackground:                spin(@textColor,90);
 @navbarBackgroundHighlight:       lighten(@navbarBackground,10%);
 
-@navbarText:                      @grayLighter;
-@navbarLinkColor:                 lighten(@navbarBackground,30);
+@navbarText:                      spin(@textColor,135);
+@navbarLinkColor:                 spin(@textColor,180);
 @navbarLinkColorHover:            @white;
 
 // Background
-@siteBackground: #F7F4E9;
+@siteBackground: spin(@textColor,225);
 @siteBackgroundHighlight: lighten(@siteBackground,20%);
 
 // Buttons
-@primaryButtonBackground:  @linkColor;
+@primaryButtonBackground: spin(@textColor,270);
 
 // Box
-@boxbackground: @white;
-@boxhighlight: #eee;
+@boxbackground: spin(@textColor,315);
+@boxhighlight: lighten(@boxbackground, 95%);
 
 // Highlight
-@hightlightcolor: @grayLighter;
+@hightlightcolor: spin(@textColor,360);
 
 body {
     #gradient > .vertical-three-colors(@siteBackgroundHighlight, @siteBackground, 20%, @siteBackground);
 }
 
 small {
-	color: lighten(@black, 60%);
+	color:@grayLight;
 }
 
-// Brand of the site/app
 .navbar-fixed-top .brand  {
     color: lighten(@navbarText, 40%);
     text-shadow: 0 1px 0 darken(@navbarBackgroundHighlight,30%),0 0 30px darken(@navbarBackgroundHighlight,40%) ;
@@ -52,45 +51,25 @@ small {
   #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
 }
 
-.backset (@a) when (lightness(@a) >= 50%) {
-  color: @black;
+th,.active,.pagination a:hover,.date td a:hover {
+	background:@navbarBackground;
+	color:@white
 }
-.backset (@a) when (lightness(@a) < 50%) {
-  color: @white;
-}
-.backset (@a) {
-  background-color: @a;
-}
-
-.date {
-    
-     td {
-        a { 
-            &:hover, &.active{.backset (@navbarBackground);}
-        }
-     }
-     
-}
-
-.pagination {
-    .active a, a:hover {
-        .backset (@navbarBackground);
-    }
-}
-
-th {.backset (@navbarBackground);}
 
 select, textarea, input, td, #content, #dashboard, footer {
-        #gradient > .vertical-three-colors(@boxhighlight, @white, 20%, @white);
+        #gradient > .vertical-three-colors(@boxhighlight, @white, 8%, @white);
 }
 
+.active, th, nav a {
+	color: @white;
+}
 
 input, select, textarea {
-	border-color: @boxhighlight;
+	border-color: @grayLight;
 }
 
 h1,h2,h3,h4,h5,h6 {
-	border-color: @boxhighlight;
+	border-color:@grayLight;
 }
 
 .box,.box > .utils a {
@@ -102,7 +81,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .ui-state-highlight {
-	background: @hightlightcolor;
+	background:@hightlightcolor;
 	font-size:13px;
 	margin:0 0 11px 0;
 	position:relative;

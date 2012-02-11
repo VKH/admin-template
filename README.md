@@ -49,8 +49,9 @@ or **fork it** and make it better.
 Licenses
 ----
 
-- Twitter Bootstrap its Copyright from Twitter (Apache 2.0)
-- 
+- Desing Copyright (c) 2010, Mathew Davies  
+- [Twitter Bootstrap](http://twitter.github.com/bootstrap/) licensed under the [Apache License v2.0.](http://www.apache.org/licenses/LICENSE-2.0)
+- Icons from [Glyphicons Free](http://glyphicons.com/), licensed under [CC BY 3.0.](http://creativecommons.org/licenses/by/3.0/)
 
 ## Original version
 I keep it here to comparision and because Matt [@colonelrosa](http://twitter.com/colonelrosa) its a cool dude  
