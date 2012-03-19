@@ -12,13 +12,9 @@
         <meta name="description" content="">
 
         <meta name="viewport" content="width=device-width">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-
-        <link rel="stylesheet" href="css/template.css">
-        <link rel="stylesheet" href="css/responsive.css">
-
-        <script src="js/libs/modernizr-2.5.0.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/template.css">
+	<link rel="stylesheet" href="css/responsive.css">
     </head>
     <body>
 
@@ -73,7 +69,7 @@
                             <div class="utils">
                                 <a href="#">View More</a>
                             </div>
-                            <table class="table table-condensed">
+                            <table class="table">
                                 <tbody>
                                     <tr>
                                         <td>Newton 2</td>
@@ -119,7 +115,7 @@
                             <div class="utils">
                                 <a href="#">View More</a>
                             </div>
-                            <table class="table table-condensed">
+                            <table class="table">
                                 <tbody>
                                     <tr>
                                         <td>1 Post</td>
@@ -148,12 +144,12 @@
                             </div>
                             <form action="#" method="post">
 
-                                <label for="title">Title <small>Alpha-numeric characters only.</small> </label>
-                                <input type="text" name="title" />
+                                <label for="quick-post-title">Title <small>Alpha-numeric characters only.</small> </label>
+                                <input id="quick-post-title" type="text" name="title" />
 
 
-                                <label for="post">Post <small>Parsed by Markdown.</small> </label>
-                                <textarea name="post" class="input-xlarge"></textarea>
+                                <label for="quick-post-content">Post <small>Parsed by Markdown.</small> </label>
+                                <textarea id="quick-post-content" name="post" class="input-xlarge"></textarea>
                                 <br>
                                 <input type="submit" value="post" class="btn btn-primary" />
 
@@ -169,7 +165,7 @@
                             <div class="utils">
                                 <a href="#">View More</a>
                             </div>
-                            <table class="table table-condensed ">
+                            <table class="table">
                                 <tbody>
                                     <tr>
                                         <td>News</td>
@@ -280,11 +276,8 @@
                 </p>
             </footer>
 
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-            <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/libs/jquery-ui.min.js"><\/script>')</script>
-
-            <script src="js/min/script-min.js"></script>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
     </body>
 </html>
